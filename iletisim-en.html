@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Kirik Makina</title>
+<meta name="description" content="Tell us what you need and we will find the right machine together.">
+<script src="button.js"></script>
+<link rel="stylesheet" href="inner-pages.css">
+</head>
+<body class="ip-page contact-page">
+<main>
+<section class="ip-hero"><div class="ip-wrap">
+  <p class="home-eyebrow">CONTACT</p>
+  <h1>Let's talk.</h1>
+  <p class="lead">Tell us what you need and we will find the right machine together.</p>
+</div></section>
+<section class="ip-wrap ip-section">
+  <div class="ct-info">
+    <div class="ct-card home-reveal"><span class="ct-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><h2>Address</h2><p>Beylikdüzü OSB Birlik Sanayi Sitesi<br>2nd Street No: 50<br>34055 Beylikdüzü / Istanbul, Türkiye</p><a href="https://maps.google.com/?cid=7657547815049319602" target="_blank" rel="noopener">Get directions</a></div>
+    <div class="ct-card home-reveal"><span class="ct-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><h2>Telephone</h2><a href="tel:+902125671049">0212 567 10 49</a><small>Fax: 0212 567 10 50</small></div>
+    <div class="ct-card home-reveal"><span class="ct-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></span><h2>Mobile</h2><small>Selahattin KİRİK</small><a href="tel:+905423144255">0542 314 42 55</a><small>Arif SOĞANLI</small><a href="tel:+905323754124">0532 375 41 24</a><small>Hasan KİRİK</small><a href="tel:+905388425501">0538 842 55 01</a></div>
+    <div class="ct-card home-reveal"><span class="ct-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h2>Email</h2><a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a><h2 style="margin-top:14px">Working hours</h2><p>Please call us for our working hours.</p></div>
+  </div>
+</section>
+<section class="ip-wrap ct-main">
+  <div class="ct-map-box home-reveal">
+    <iframe title="Kirik Makina location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Kirik+Makina+Beylikd%C3%BCz%C3%BC+%C4%B0stanbul&amp;ll=41.0014561,28.6601495&amp;z=17&amp;output=embed"></iframe>
+    <div class="ct-map-bar"><span>Beylikdüzü / Istanbul</span><a href="https://maps.google.com/?cid=7657547815049319602" target="_blank" rel="noopener">Open in maps</a></div>
+  </div>
+</section>
+</main>
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index-en.html">Kirik Makina</a>
+  <span>Beylikdüzü OSB Birlik Sanayi Sitesi, 2nd Street No: 50, Beylikdüzü / Istanbul</span>
+  <a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a>
+</footer>
+<script>
+(function(){
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var io=new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("home-revealed");o.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px 400px 0px"});
+  document.querySelectorAll(".home-reveal").forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

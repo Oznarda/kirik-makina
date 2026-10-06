@@ -1,0 +1,445 @@
+@charset "utf-8";
+
+
+
+.clear{clear:both;}
+.aciz {background-image:url(images/ciz-1.gif); height:10px; font-size:1px; }
+.bciz {background-image:url(images/ciz-2.gif); height:10px; font-size:1px; }
+
+#inc {width:800px; margin-left:10px; text-align:justify;}
+.baslik {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 180%; font-style: normal; font-weight: normal; color: #761701; text-decoration: none}
+.baslik2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 140%; font-style: normal; font-weight: normal; color: #857058; text-decoration: none}
+
+
+
+
+#aa { width:850px; height:10px; background-image:url(images/aa.png); float:center;}
+#bb { width:850px;  background-image:url(images/bb.png); min-height:360px; float:center; }
+#cc { width:850px; height:10px; background-image:url(images/cc.png); float:center;  }
+
+
+/* @override http://iaian7.com/css.php?n=mediaboxAdvBlack2 */
+
+		/*	mediaboxAdvanced Black theme	*/
+		/*	version 2.2 - February 2011		*/
+		/*	for mediaboxAdvanced v.1.4	*/
+
+		/*	Overlay background styling	*/
+
+
+		
+#mbOverlay {
+	position: fixed;
+	z-index: 9998;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #838a9a;
+/*	background-color: rgba(131,138,154,0.70);	*/
+	cursor: pointer;
+}
+
+		/*	Legacy fix for older browsers	*/
+
+#mbOverlay.mbOverlayOpaque {
+	background: transparent url(images/80.png) repeat;
+}
+
+#mbOverlay.mbOverlayAbsolute {
+	position: absolute;
+}
+
+		/*	Overlay panel styling	*/
+
+#mbCenter {
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	overflow: hidden;
+	background-color: #000;
+	-webkit-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-khtml-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.50);
+}
+
+#mbCenter.mbLoading {
+	background: #000 url(images/mediabox/MinimalLoading.gif) no-repeat center;
+/*	This style is applied only during animation.	*/
+/*	For example, the next lines turn off shadows	*/
+/*	improving browser performance on slow systems.	*/
+/*	To leave shadows on, just remove the following:	*/
+	-webkit-box-shadow: none;
+	-khtml-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#mbImage {
+	position: relative;
+	left: 0;
+	top: 0;
+
+		/*	Inline content styling	*/
+
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: left;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+		/*	Title, Caption and Button styling	*/
+
+#mbBottom {
+	min-height: 20px;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	text-align: left;
+	padding: 0 10px 10px;
+}
+
+#mbTitle, #mbPrevLink, #mbNextLink, #mbCloseLink {
+	display: inline;
+	color: #fff;
+	font-weight: default;
+	line-height: 20px;
+	font-size: 11px;
+}
+
+#mbNumber {
+	display: inline;
+	color: #000;
+	line-height: 14px;
+	font-size: 2px;
+	margin: auto 10px;
+}
+
+#mbCaption {
+	display: block;
+	color: #999;
+	line-height: 14px;
+	font-size: 10px;
+}
+
+#mbPrevLink, #mbNextLink, #mbCloseLink {
+	float: right;
+	outline: none;
+	margin: 0 0 0 10px;
+	font-weight: normal;
+}
+
+#mbPrevLink b, #mbNextLink b, #mbCloseLink b {
+	color: #eee;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#mbPrevLink big, #mbNextLink big, #mbCloseLink big {
+	color: #eee;
+	font-size: 16px;
+	line-height: 14px;
+	font-weight: bold;
+}
+
+#mbBottom a, #mbBottom a:link, #mbBottom a:visited {
+	text-decoration: none;
+	color: #ddd;
+}
+
+#mbBottom a:hover, #mbBottom a:active {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+		/*	Error message styling	*/
+
+#mbError {
+	position: relative;
+	font-family: Myriad, Verdana, Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border: 10px solid #700;
+	padding: 10px 10px 10px;
+	margin: 20px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#mbError a, #mbError a:link, #mbError a:visited, #mbError a:hover, #mbError a:active {
+	color: #d00;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*************footer**********/
+.footer {padding:0; width:100%; height:12%; margin:0; border-top:2px solid #818181; background:#004289;}
+.footer_resize { width:850px;  margin:0 auto; padding:5px 10px;}
+.footer p { font:normal 11px  Arial, Helvetica, sans-serif; color:#ffffff;}
+.footer a { font:bold 11px Arial, Helvetica, sans-serif; color:#3e3e3e; text-decoration:none; padding:5px; margin:0;}
+.footer p.right { text-align:right; width:350px; margin:0; padding:25px 0 0 0; float:right;} 
+.footer p.right a { font:normal 11px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; padding:0px; margin:0;}
+.footer p.right a:hover { font:normal 11px Arial, Helvetica, sans-serif; color:#fff; text-decoration:underline; padding:0px; margin:0;}
+.footer p.leftt { text-align:left; width:500px; margin:0; padding:15px 0 0 0; float:left;}
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+
+A:link
+{
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+a:hover {  color: #FF9900}
+
+.satir
+{
+	font-family: Arial, sans-serif;
+font-size: 12px;
+color: #369;
+padding-bottom: 1px;
+border-bottom: 1px solid #999;
+}
+
+.satir0
+{
+	FONT-SIZE: 9px;
+	COLOR: #313131;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 20px;
+	LETTER-SPACING: 1px
+}
+
+.satir1
+{
+	FONT-SIZE: 11px;
+	COLOR: #313131;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 20px;
+	LETTER-SPACING: 1px
+}
+
+.satir2
+{
+	FONT-SIZE: 12px;
+	COLOR: #4f4f4f;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 18px;
+	LETTER-SPACING: 0px
+}
+
+.satir3
+{
+	FONT-SIZE: 12px;
+	COLOR: #4f4f4f;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 18px;
+	LETTER-SPACING: 0px
+}
+
+.form
+{
+  
+    BORDER-TOP: #8C8A8B 1px solid;
+    FONT-SIZE: 10px;
+    BACKGROUND: #fFfFfF;
+    CURSOR: text;
+    COLOR: #000000;
+    BORDER-BOTTOM: #8C8A8B 0px solid;
+    FONT-FAMILY: verdana,arial;
+    HEIGHT: 19px;
+    TEXT-DECORATION: none
+}
+.formiki
+{
+    FONT-SIZE: 12px;
+    BACKGROUND: #F5F5F5;
+    CURSOR: text;
+    COLOR: #202020;
+    FONT-FAMILY: verdana,arial;
+    HEIGHT: 20px;
+    TEXT-DECORATION: none
+}
+.text
+{
+    FONT-SIZE: 11px;
+    COLOR: #4A4A4A;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.text2
+{
+    FONT-SIZE: 24px;
+    COLOR: #4A4A4A;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+
+
+
+
+.haber {  font-size: 15px; color: #202020; text-align: justify}
+
+
+
+.satirarasi
+{
+    FONT-SIZE: 9px;
+    COLOR: #333333;
+    LINE-HEIGHT: 10px;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+
+
+a:hover {  color: #FF9900}
+
+
+
+ul.map a, ul.map a:visited  { color: #333333; text-decoration: none;}
+ul.map a:hover {  color: #FF9900}
+ul.map{ font-size: 12px;}
+
+.bgGreyRed {
+	background-color: #f0efec;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6c6559;
+}
+
+h1 {
+font-family: Arial, sans-serif;
+font-size: 24px;
+color: #369;
+padding-bottom: 4px;
+border-bottom: 1px solid #999;
+}
+
+.GriOval .goLink, .GriOval .goLink:hover { background:url(images/ok.gif) left 2px no-repeat; padding-left:16px; line-height:130%; margin-bottom:3px }
+.GriOval .goLink:hover { color:#000; text-decoration:none}
+.goLink { background:url(images/ok.gif) no-repeat left 4px; display:inline-block; padding-left:15px; text-decoration:none; color:#bd0812 }
+.goLink:hover { background-image:url(images/ok.gif); color:#ff0000; text-decoration:none }
+
+
+.alt
+{
+padding: 5px; 
+border: 1px solid #5d5d5d; 
+background-color: #a3a3a3;
+FONT-SIZE: 11px;
+	COLOR: #000;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.alt a:link
+{
+    FONT-SIZE: 11px;
+	COLOR: #4b3b33;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.alt a:hover
+{
+    FONT-SIZE: 11px;
+	COLOR: #4b3b33;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.image2{
+	border:5px solid #e9e2df;
+	padding:1px;
+	background:#fff;
+	FONT-SIZE: 12px;
+    COLOR: #e9e2df;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: normal 11px Arial;
+width: 190px; /* Main Menu Item widths */
+border-bottom: 0px solid #463730;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #000000;
+text-decoration: none;
+padding: 3.2px;
+border-bottom: 1px solid #e1e1e1;
+border-right: 0px solid #463730;
+
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #f0f0f0; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #000;
+}
+
+.sidebarmenu ul li a:hover{
+background:#d4d4d4 url("images/vert-one_arrow.gif") no-repeat 0 15px;
+color: #fff;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */

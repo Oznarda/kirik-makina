@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Company | Kirik Makina</title>
+<meta name="description" content="Kirik Makina manufactures machinery for spoon, fork, knife and cookware producers.">
+<script src="menucontents.js"></script>
+<script src="button.js"></script>
+<link rel="stylesheet" href="company.css">
+</head>
+<body class="company-page">
+<main>
+<section class="co-hero">
+  <img src="images/gorsel-2.jpg" alt="">
+  <div class="co-wrap">
+    <p class="home-eyebrow">COMPANY</p>
+    <h1>Machine builders focused on quality and trust.</h1>
+    <p class="lead">We develop high-precision machines for spoon, fork, knife and cookware manufacturers.</p>
+  </div>
+</section>
+
+<section class="co-wrap co-about home-reveal">
+  <img src="images/kurumsal-makina2.jpg" alt="Kirik Makina production">
+  <div>
+    <p class="home-eyebrow home-eyebrow-blue">COMPANY PROFILE</p>
+    <h2>We understand your production process.</h2>
+    <p class="txt">Kirik Makina supplies machinery to companies producing spoons, forks, knives and cookware. We put quality first in everything we build and offer our customers high-precision solutions.</p>
+  </div>
+</section>
+
+<section class="co-band home-reveal">
+  <div class="co-wrap">
+    <div class="co-head"><p class="home-eyebrow home-eyebrow-blue">OUR DIRECTION</p><h2>Our vision and mission</h2></div>
+    <div class="co-two">
+      <div class="co-card"><h3>Vision</h3><ul><li>To ensure unconditional customer satisfaction through the quality of our products.</li></ul></div>
+      <div class="co-card"><h3>Mission</h3><ul><li>To produce quality, reliable products.</li><li>To strengthen our competitiveness through continuous improvement and development.</li><li>To be our customers' first choice with our products, solutions and after-sales support.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="co-wrap co-values home-reveal">
+  <div class="co-head"><p class="home-eyebrow home-eyebrow-blue">OUR VALUES</p><h2>The principles that guide us</h2></div>
+  <div class="co-grid">
+    <div class="co-value home-reveal">Determination to achieve</div>
+    <div class="co-value home-reveal">Taking initiative and responsibility</div>
+    <div class="co-value home-reveal">Customer focus</div>
+    <div class="co-value home-reveal">Honesty</div>
+    <div class="co-value home-reveal">Experience, continuous improvement and change</div>
+    <div class="co-value home-reveal">Solidarity and sharing</div>
+    <div class="co-value home-reveal">Mutual respect</div>
+    <div class="co-value home-reveal">Being principled and consistent</div>
+  </div>
+</section>
+
+<section class="co-quality home-reveal">
+  <div class="co-wrap">
+    <p class="home-eyebrow">QUALITY POLICY</p>
+    <h2>The right product, when you need it.</h2>
+    <p>We identify customer needs and expectations accurately, and deliver the highest-quality products on time.</p>
+    <p class="sub">With this approach, our company and team keep improving and renewing themselves.</p>
+  </div>
+</section>
+
+<section class="co-wrap co-videos home-reveal">
+  <div class="co-head"><p class="home-eyebrow home-eyebrow-blue">FROM OUR WORKSHOP</p><h2>Take a closer look at the production process.</h2></div>
+  <div class="co-vgrid"><figure class="co-vid"><div class="co-vid-frame"><iframe loading="lazy" title="Full Automatic Polishing Machine" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/2BZ-xJ4SitU?rel=0" allowfullscreen></iframe></div><figcaption>Full Automatic Polishing Machine</figcaption></figure><figure class="co-vid"><div class="co-vid-frame"><iframe loading="lazy" title="Full Automatic Marking Machine" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/8dr-LSCDORo?rel=0" allowfullscreen></iframe></div><figcaption>Full Automatic Marking Machine</figcaption></figure><figure class="co-vid"><div class="co-vid-frame"><iframe loading="lazy" title="Full Automatic Cylinder Machine" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/GajcxgV-Ufk?rel=0" allowfullscreen></iframe></div><figcaption>Full Automatic Cylinder Machine</figcaption></figure></div>
+</section>
+
+<section class="co-wrap co-cta home-reveal">
+  <h2>Let's find the right machine for your needs.</h2>
+  <a class="home-button home-button-blue" href="iletisim-en.html">Contact us</a>
+</section>
+</main>
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index-en.html">Kirik Makina</a>
+  <span>Beylikdüzü OSB Birlik Sanayi Sitesi, 2nd Street No: 50, Beylikdüzü / Istanbul</span>
+  <a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a>
+</footer>
+<script>
+(function(){
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var io=new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("home-revealed");o.unobserve(e.target);}});},{threshold:.12,rootMargin:"0px 0px -32px 0px"});
+  document.querySelectorAll(".home-reveal").forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

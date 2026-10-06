@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hamur Kazanı Desen Makinası | Kirik Makina</title>
+<meta name="description" content="Hamur kazanlarına hare desen veren makine.">
+<script src="button.js"></script>
+<link rel="stylesheet" href="machine.css">
+</head>
+<body class="mc-page">
+<main>
+<section class="mc-hero"><div class="mc-wrap">
+  <p class="mc-crumb"><a href="index.html">Ana Sayfa</a> <span>/</span> <a href="urunler.html">Ürünler</a></p>
+  <h1>Hamur Kazanı Desen Makinası</h1>
+  <p class="lead">Hamur kazanlarına hare desen veren makine.</p>
+  
+</div></section>
+<section class="mc-wrap mc-main">
+  <div class="home-reveal">
+    <div class="mc-stage" id="stage"><img id="stage-img" src="images/gorsel-makina14-1.jpg" alt="Hamur Kazanı Desen Makinası"></div>
+    <div class="mc-thumbs"><button type="button" aria-label="Hamur Kazanı Desen Makinası 1" aria-current="true" data-src="images/gorsel-makina14-1.jpg"><img src="images/gorsel-makina14-1.jpg" alt=""></button><button type="button" aria-label="Hamur Kazanı Desen Makinası 2" data-src="images/gorsel-makina14-2.jpg"><img src="images/gorsel-makina14-2.jpg" alt=""></button><button type="button" aria-label="Hamur Kazanı Desen Makinası 3" data-src="images/gorsel-makina14-3.jpg"><img src="images/gorsel-makina14-3.jpg" alt=""></button><button type="button" aria-label="Hamur Kazanı Desen Makinası 4" data-src="images/gorsel-makina14-4.jpg"><img src="images/gorsel-makina14-4.jpg" alt=""></button></div>
+  </div>
+  <div><div class="mc-card home-reveal"><h2>Özellikler</h2><p class="mc-note">Bu ürün için özellik listelenmemiştir.</p><a class="mc-notelink" href="iletisim.html">Detaylı bilgi için bizimle iletişime geçin.</a></div></div>
+</section>
+<section class="mc-wrap mc-more">
+  <h2>Diğer ürünler</h2>
+  <nav class="mc-nav">
+    <a href="makina13.html"><small>ÖNCEKİ</small>Tencere Taban Yapıştırma Makinası</a>
+    <a class="all" href="urunler.html">Tüm ürünler</a>
+    <a class="next" href="makina17.html"><small>SONRAKİ</small>Full Otomatik Hidrolik Press</a>
+  </nav>
+</section>
+<section class="mc-wrap mc-cta home-reveal">
+  <h2>Bu makine hakkında bilgi alın.</h2>
+  <a class="home-button home-button-blue" href="iletisim.html">İletişime geçin</a>
+</section>
+</main>
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index.html">Kirik Makina</a>
+  <span>Beylikdüzü OSB Birlik Sanayi Sitesi 2. Cadde No: 50, Beylikdüzü / İstanbul</span>
+  <a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a>
+</footer>
+<div class="mc-zoom" id="zoom"><img alt=""></div>
+<script>
+(function(){
+  var img=document.getElementById("stage-img"),zoom=document.getElementById("zoom");
+  document.querySelectorAll(".mc-thumbs button").forEach(function(b){b.addEventListener("click",function(){img.src=b.dataset.src;document.querySelectorAll(".mc-thumbs button").forEach(function(o){o.removeAttribute("aria-current")});b.setAttribute("aria-current","true");});});
+  document.getElementById("stage").addEventListener("click",function(){zoom.firstChild.src=img.src;zoom.classList.add("open");});
+  zoom.addEventListener("click",function(){zoom.classList.remove("open");});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")zoom.classList.remove("open");});
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var io=new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("home-revealed");o.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px 400px 0px"});
+  document.querySelectorAll(".home-reveal").forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

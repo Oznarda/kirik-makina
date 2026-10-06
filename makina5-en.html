@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food Processor Robot Knife Grinding Machine | Kirik Makina</title>
+<meta name="description" content="Grinding machine for all types of food processor knives.">
+<script src="button.js"></script>
+<link rel="stylesheet" href="machine.css">
+</head>
+<body class="mc-page">
+<main>
+<section class="mc-hero"><div class="mc-wrap">
+  <p class="mc-crumb"><a href="index-en.html">Home</a> <span>/</span> <a href="urunler-en.html">Products</a></p>
+  <h1>Food Processor Robot Knife Grinding Machine</h1>
+  <p class="lead">Grinding machine for all types of food processor knives.</p>
+  
+</div></section>
+<section class="mc-wrap mc-main">
+  <div class="home-reveal">
+    <div class="mc-stage" id="stage"><img id="stage-img" src="images/gorsel-makina5-1.jpg" alt="Food Processor Robot Knife Grinding Machine"></div>
+    <div class="mc-thumbs"><button type="button" aria-label="Food Processor Robot Knife Grinding Machine 1" aria-current="true" data-src="images/gorsel-makina5-1.jpg"><img src="images/gorsel-makina5-1.jpg" alt=""></button><button type="button" aria-label="Food Processor Robot Knife Grinding Machine 2" data-src="images/gorsel-makina5-2.jpg"><img src="images/gorsel-makina5-2.jpg" alt=""></button><button type="button" aria-label="Food Processor Robot Knife Grinding Machine 3" data-src="images/gorsel-makina5-3.jpg"><img src="images/gorsel-makina5-3.jpg" alt=""></button></div>
+  </div>
+  <div><div class="mc-card home-reveal"><h2>Specifications</h2><ul><li>Two 175 × 80 magnesite wheels</li><li>Automatic wheel feed</li><li>CNC slide system</li><li>CNC depth-of-cut screw</li><li>Water tank</li><li>Left-right travel adjustment with optical sensor</li></ul></div></div>
+</section>
+<section class="mc-wrap mc-videos home-reveal"><h2>Videos</h2><div class="mc-vgrid"><div class="mc-video"><iframe loading="lazy" title="Food Processor Robot Knife Grinding Machine" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/5U00VCDOAvs?rel=0" allowfullscreen></iframe></div></div></section>
+<section class="mc-wrap mc-more">
+  <h2>More products</h2>
+  <nav class="mc-nav">
+    <a href="makina4-en.html"><small>PREVIOUS</small>Knife Polishing Machine</a>
+    <a class="all" href="urunler-en.html">All products</a>
+    <a class="next" href="makina6-en.html"><small>NEXT</small>Fully Automatic Polishing Machine</a>
+  </nav>
+</section>
+<section class="mc-wrap mc-cta home-reveal">
+  <h2>Ask us about this machine.</h2>
+  <a class="home-button home-button-blue" href="iletisim-en.html">Contact us</a>
+</section>
+</main>
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index-en.html">Kirik Makina</a>
+  <span>Beylikdüzü OSB Birlik Sanayi Sitesi, 2nd Street No: 50, Beylikdüzü / Istanbul</span>
+  <a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a>
+</footer>
+<div class="mc-zoom" id="zoom"><img alt=""></div>
+<script>
+(function(){
+  var img=document.getElementById("stage-img"),zoom=document.getElementById("zoom");
+  document.querySelectorAll(".mc-thumbs button").forEach(function(b){b.addEventListener("click",function(){img.src=b.dataset.src;document.querySelectorAll(".mc-thumbs button").forEach(function(o){o.removeAttribute("aria-current")});b.setAttribute("aria-current","true");});});
+  document.getElementById("stage").addEventListener("click",function(){zoom.firstChild.src=img.src;zoom.classList.add("open");});
+  zoom.addEventListener("click",function(){zoom.classList.remove("open");});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")zoom.classList.remove("open");});
+  if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  var io=new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("home-revealed");o.unobserve(e.target);}});},{threshold:0,rootMargin:"0px 0px 400px 0px"});
+  document.querySelectorAll(".home-reveal").forEach(function(s){io.observe(s);});
+})();
+</script>
+</body>
+</html>

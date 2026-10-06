@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<!-- This page is served for any missing URL, at any depth, so relative assets would break.
+     Find the folder that really holds this site (domain root or any sub-folder, no name hard-coded):
+     walk up the URL path and pick the deepest folder that contains 404.css. -->
+<script>
+(function(){
+  var segs=location.pathname.split("/").slice(0,-1),base="/";
+  for(var n=segs.length;n>=1;n--){
+    var dir=segs.slice(0,n).join("/")+"/";
+    try{
+      var x=new XMLHttpRequest();
+      x.open("HEAD",dir+"404.css",false);
+      x.send();
+      if(x.status===200){base=dir;break;}
+    }catch(e){}
+  }
+  document.write('<base href="'+base+'">');
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>404 | Kirik Makina</title>
+<script src="button.js"></script>
+<link rel="stylesheet" href="404.css">
+</head>
+<body class="e4-page">
+<main>
+<section class="e4-hero"><div class="e4-wrap">
+  <div>
+    <p class="home-eyebrow" data-l="tr">HATA 404 · SAYFA BULUNAMADI</p>
+    <p class="home-eyebrow" data-l="en">ERROR 404 · PAGE NOT FOUND</p>
+    <h1 data-l="tr">Aradığınız sayfa hatta değil.</h1>
+    <h1 data-l="en">The page you're looking for is off the line.</h1>
+    <p class="lead" data-l="tr">Adres değişmiş ya da sayfa kaldırılmış olabilir. Ana sayfaya dönebilir veya makinelerimizi inceleyebilirsiniz.</p>
+    <p class="lead" data-l="en">The address may have changed or the page may have been removed. Head back home or browse our machines.</p>
+    <div class="e4-actions">
+      <a class="home-button home-button-light" href="index.html" data-l="tr">Ana sayfaya dön</a>
+      <a class="home-button home-button-light" href="index-en.html" data-l="en">Back to home</a>
+      <a class="e4-ghost" href="urunler.html" data-l="tr">Ürünleri incele</a>
+      <a class="e4-ghost" href="urunler-en.html" data-l="en">Browse products</a>
+    </div>
+    <code class="e4-path" id="e4-path"></code>
+  </div>
+  <div class="e4-art" aria-hidden="true">
+    <span class="e4-digit">4</span>
+    <svg class="e4-gear" viewBox="135 116 860 864" role="img" aria-label="KMS">
+      <defs><radialGradient id="e4-metal" cx="50%" cy="50%" r="50%"><stop offset=".62" stop-color="#e0e4e7"/><stop offset=".82" stop-color="#b3b9be"/><stop offset="1" stop-color="#848b93"/></radialGradient></defs>
+      <g transform="translate(380 740)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="21.6s" repeatCount="indefinite"/>
+          <path d="M187.6,-14.3 L227.3,-10.1 L227.3,10.1 L187.6,14.3 L184.9,34.8 L222.2,49 L216.9,68.6 L177.5,62.3 L169.6,81.4 L201.9,104.9 L191.8,122.4 L155.3,106.1 L142.7,122.6 L167.9,153.6 L153.6,167.9 L122.6,142.7 L106.1,155.3 L122.4,191.8 L104.9,201.9 L81.4,169.6 L62.3,177.5 L68.6,216.9 L49,222.2 L34.8,184.9 L14.3,187.6 L10.1,227.3 L-10.1,227.3 L-14.3,187.6 L-34.8,184.9 L-49,222.2 L-68.6,216.9 L-62.3,177.5 L-81.4,169.6 L-104.9,201.9 L-122.4,191.8 L-106.1,155.3 L-122.6,142.7 L-153.6,167.9 L-167.9,153.6 L-142.7,122.6 L-155.3,106.1 L-191.8,122.4 L-201.9,104.9 L-169.6,81.4 L-177.5,62.3 L-216.9,68.6 L-222.2,49 L-184.9,34.8 L-187.6,14.3 L-227.3,10.1 L-227.3,-10.1 L-187.6,-14.3 L-184.9,-34.8 L-222.2,-49 L-216.9,-68.6 L-177.5,-62.3 L-169.6,-81.4 L-201.9,-104.9 L-191.8,-122.4 L-155.3,-106.1 L-142.7,-122.6 L-167.9,-153.6 L-153.6,-167.9 L-122.6,-142.7 L-106.1,-155.3 L-122.4,-191.8 L-104.9,-201.9 L-81.4,-169.6 L-62.3,-177.5 L-68.6,-216.9 L-49,-222.2 L-34.8,-184.9 L-14.3,-187.6 L-10.1,-227.3 L10.1,-227.3 L14.3,-187.6 L34.8,-184.9 L49,-222.2 L68.6,-216.9 L62.3,-177.5 L81.4,-169.6 L104.9,-201.9 L122.4,-191.8 L106.1,-155.3 L122.6,-142.7 L153.6,-167.9 L167.9,-153.6 L142.7,-122.6 L155.3,-106.1 L191.8,-122.4 L201.9,-104.9 L169.6,-81.4 L177.5,-62.3 L216.9,-68.6 L222.2,-49 L184.9,-34.8Z M146,0 A146,146 0 1 0 -146,0 A146,146 0 1 0 146,0Z" fill="url(#e4-metal)" fill-rule="evenodd" stroke="#5d646b" stroke-width="2" stroke-linejoin="round"/>
+          <circle r="158" fill="none" stroke="#6a7279" stroke-width="5"/>
+          <circle r="153" fill="none" stroke="#e3e7ea" stroke-width="2" opacity=".8"/>
+        </g>
+        <text y="0" dy=".35em" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="240" fill="#fff">S</text>
+      </g>
+      <g transform="translate(356.9 338.2)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="19.8s" repeatCount="indefinite"/>
+          <path d="M170,14.1 L208.6,24.6 L205.2,44.7 L165.4,42 L159.2,61.5 L193.2,82.3 L184.3,100.7 L146.9,86.9 L135.4,103.8 L162.2,133.4 L148.5,148.5 L116.4,124.7 L100.7,137.8 L118,173.7 L100.6,184.3 L76.6,152.5 L57.8,160.5 L64.3,199.9 L44.6,205.2 L30.5,167.9 L10.2,170.3 L5.4,209.9 L-15,209.5 L-18,169.7 L-38.2,166.3 L-54,202.9 L-73.4,196.7 L-65.1,157.7 L-83.5,148.8 L-109,179.5 L-125.9,168.1 L-106.9,133 L-122,119.2 L-155.1,141.5 L-168.1,125.8 L-140,97.5 L-150.7,80 L-188.7,92.1 L-196.8,73.4 L-161.8,54.1 L-167.1,34.3 L-207,35.2 L-209.5,14.9 L-170.5,6.3 L-170,-14.1 L-208.6,-24.6 L-205.2,-44.7 L-165.4,-42 L-159.2,-61.5 L-193.2,-82.3 L-184.3,-100.7 L-146.9,-86.9 L-135.4,-103.8 L-162.2,-133.4 L-148.5,-148.5 L-116.4,-124.7 L-100.7,-137.8 L-118,-173.7 L-100.6,-184.3 L-76.6,-152.5 L-57.8,-160.5 L-64.3,-199.9 L-44.6,-205.2 L-30.5,-167.9 L-10.2,-170.3 L-5.4,-209.9 L15,-209.5 L18,-169.7 L38.2,-166.3 L54,-202.9 L73.4,-196.7 L65.1,-157.7 L83.5,-148.8 L109,-179.5 L125.9,-168.1 L106.9,-133 L122,-119.2 L155.1,-141.5 L168.1,-125.8 L140,-97.5 L150.7,-80 L188.7,-92.1 L196.8,-73.4 L161.8,-54.1 L167.1,-34.3 L207,-35.2 L209.5,-14.9 L170.5,-6.3Z M146,0 A146,146 0 1 0 -146,0 A146,146 0 1 0 146,0Z" fill="url(#e4-metal)" fill-rule="evenodd" stroke="#5d646b" stroke-width="2" stroke-linejoin="round"/>
+          <circle r="158" fill="none" stroke="#6a7279" stroke-width="5"/>
+          <circle r="153" fill="none" stroke="#e3e7ea" stroke-width="2" opacity=".8"/>
+        </g>
+        <text y="0" dy=".35em" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="240" fill="#fff">K</text>
+      </g>
+      <g transform="translate(755.1 551.5)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="21.6s" repeatCount="indefinite"/>
+          <path d="M185.5,31.5 L223,45.2 L218.1,64.8 L178.6,59.2 L171,78.5 L203.7,101.3 L193.9,119 L157.1,103.4 L144.8,120 L170.5,150.6 L156.5,165.2 L125,140.6 L108.8,153.4 L125.7,189.6 L108.4,200 L84.4,168.1 L65.4,176.4 L72.4,215.7 L52.9,221.3 L38,184.2 L17.5,187.3 L14.1,227.1 L-6.2,227.4 L-11,187.8 L-31.5,185.5 L-45.2,223 L-64.8,218.1 L-59.2,178.6 L-78.5,171 L-101.3,203.7 L-119,193.9 L-103.4,157.1 L-120,144.8 L-150.6,170.5 L-165.2,156.5 L-140.6,125 L-153.4,108.8 L-189.6,125.7 L-200,108.4 L-168.1,84.4 L-176.4,65.4 L-215.7,72.4 L-221.3,52.9 L-184.2,38 L-187.3,17.5 L-227.1,14.1 L-227.4,-6.2 L-187.8,-11 L-185.5,-31.5 L-223,-45.2 L-218.1,-64.8 L-178.6,-59.2 L-171,-78.5 L-203.7,-101.3 L-193.9,-119 L-157.1,-103.4 L-144.8,-120 L-170.5,-150.6 L-156.5,-165.2 L-125,-140.6 L-108.8,-153.4 L-125.7,-189.6 L-108.4,-200 L-84.4,-168.1 L-65.4,-176.4 L-72.4,-215.7 L-52.9,-221.3 L-38,-184.2 L-17.5,-187.3 L-14.1,-227.1 L6.2,-227.4 L11,-187.8 L31.5,-185.5 L45.2,-223 L64.8,-218.1 L59.2,-178.6 L78.5,-171 L101.3,-203.7 L119,-193.9 L103.4,-157.1 L120,-144.8 L150.6,-170.5 L165.2,-156.5 L140.6,-125 L153.4,-108.8 L189.6,-125.7 L200,-108.4 L168.1,-84.4 L176.4,-65.4 L215.7,-72.4 L221.3,-52.9 L184.2,-38 L187.3,-17.5 L227.1,-14.1 L227.4,6.2 L187.8,11Z M146,0 A146,146 0 1 0 -146,0 A146,146 0 1 0 146,0Z" fill="url(#e4-metal)" fill-rule="evenodd" stroke="#5d646b" stroke-width="2" stroke-linejoin="round"/>
+          <circle r="158" fill="none" stroke="#6a7279" stroke-width="5"/>
+          <circle r="153" fill="none" stroke="#e3e7ea" stroke-width="2" opacity=".8"/>
+        </g>
+        <text y="0" dy=".35em" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="240" fill="#fff">M</text>
+      </g>
+    </svg>
+    <span class="e4-digit">4</span>
+  </div>
+</div></section>
+
+<section class="e4-wrap e4-links">
+  <div class="e4-head">
+    <p class="home-eyebrow home-eyebrow-blue" data-l="tr">BELKİ BUNLARI ARIYORSUNUZ</p>
+    <p class="home-eyebrow home-eyebrow-blue" data-l="en">YOU MAY BE LOOKING FOR</p>
+    <h2 data-l="tr">Sık ziyaret edilen sayfalar</h2>
+    <h2 data-l="en">Popular pages</h2>
+  </div>
+  <div class="e4-grid">
+    <a class="e4-card" href="urunler.html" data-l="tr"><b>Ürünler</b><span>23 makine modelinin tamamı.</span><i>Görüntüle →</i></a>
+    <a class="e4-card" href="urunler-en.html" data-l="en"><b>Products</b><span>All 23 machine models.</span><i>View →</i></a>
+    <a class="e4-card" href="makina2.html" data-l="tr"><b>Full Otomatik Silindir Makinası</b><span>Çatal, kaşık ve maşa uçlarının çekimi.</span><i>İncele →</i></a>
+    <a class="e4-card" href="makina2-en.html" data-l="en"><b>Fully Automatic Cylinder Machine</b><span>Drawing fork, spoon and tong ends.</span><i>View →</i></a>
+    <a class="e4-card" href="makina6.html" data-l="tr"><b>Full Otomatik Cila Makinası</b><span>Çatal, kaşık ve bıçaklar için parlatma.</span><i>İncele →</i></a>
+    <a class="e4-card" href="makina6-en.html" data-l="en"><b>Fully Automatic Polishing Machine</b><span>Polishing for forks, spoons and knives.</span><i>View →</i></a>
+    <a class="e4-card" href="kirikmakina.html" data-l="tr"><b>Kurumsal</b><span>Vizyonumuz, misyonumuz ve değerlerimiz.</span><i>Tanıyın →</i></a>
+    <a class="e4-card" href="kirikmakina-en.html" data-l="en"><b>Company</b><span>Our vision, mission and values.</span><i>Learn more →</i></a>
+  </div>
+</section>
+
+<section class="e4-wrap e4-help">
+  <h2 data-l="tr">Aradığınızı bulamadıysanız bize ulaşın.</h2>
+  <h2 data-l="en">Can't find what you need? Get in touch.</h2>
+  <a class="home-button home-button-blue" href="iletisim.html" data-l="tr">İletişime geçin</a>
+  <a class="home-button home-button-blue" href="iletisim-en.html" data-l="en">Contact us</a>
+</section>
+</main>
+<footer class="home-footer">
+  <a class="home-footer-brand" href="index.html">Kirik Makina</a>
+  <span>Beylikdüzü OSB Birlik Sanayi Sitesi 2. Cadde No: 50, Beylikdüzü / İstanbul</span>
+  <a href="mailto:info@kirikmakina.com">info@kirikmakina.com</a>
+</footer>
+<script>
+(function(){
+  var p=decodeURIComponent(location.pathname||"");
+  if(/-en\.html$/i.test(p)){document.body.classList.add("e4-en");document.documentElement.lang="en";}
+  var g=document.querySelector(".e4-gear");
+  if(g&&g.pauseAnimations&&window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)g.pauseAnimations();
+  var el=document.getElementById("e4-path");
+  if(el&&p&&!/\/404\.html$/i.test(p))el.textContent=p;
+})();
+</script>
+</body>
+</html>

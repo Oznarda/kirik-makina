@@ -1,0 +1,184 @@
+.clear{clear:both;}
+.aciz {background-image:url(images/ciz-1.gif); height:10px; font-size:1px; }
+.bciz {background-image:url(images/ciz-2.gif); height:10px; font-size:1px; }
+
+#inc {width:800px; margin-left:10px; text-align:justify;}
+.baslik {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 180%; font-style: normal; font-weight: normal; color: #761701; text-decoration: none}
+.baslik2 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 140%; font-style: normal; font-weight: normal; color: #857058; text-decoration: none}
+
+
+
+
+#aa { width:850px; height:10px; background-image:url(images/aa.png); float:center;}
+#bb { width:850px;  background-image:url(images/bb.png); min-height:360px; float:center; }
+#cc { width:850px; height:10px; background-image:url(images/cc.png); float:center;  }
+
+
+
+
+
+.alt
+{
+padding: 5px; 
+border: 1px solid #706058; 
+background-color: #93847d;
+FONT-SIZE: 11px;
+	COLOR: #4b3b33;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.alt a:link
+{
+    FONT-SIZE: 11px;
+	COLOR: #4b3b33;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.alt a:hover
+{
+    FONT-SIZE: 11px;
+	COLOR: #4b3b33;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+A:link
+{
+    FONT-SIZE: 12px;
+    COLOR: #fff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    FONT-SIZE: 12px;
+    COLOR: #fff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+a:hover {  color: #6e5f58}
+
+.satir
+{
+	FONT-SIZE: 18px;
+	COLOR: #6e5f58;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 12px;
+	LETTER-SPACING: 1px
+}
+
+.satir1
+{
+	FONT-SIZE: 11px;
+	COLOR: #645750;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 16px;
+	LETTER-SPACING: 1px
+}
+
+.satir2
+{
+	FONT-SIZE: 12px;
+	COLOR: #4f4f4f;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 18px;
+	LETTER-SPACING: 0px
+}
+
+.text
+{
+    FONT-SIZE: 11px;
+    COLOR: #4A4A4A;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.image2{
+	border:5px solid #e9e2df;
+	padding:1px;
+	background:#fff;
+	FONT-SIZE: 12px;
+    COLOR: #4A4A4A;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.sidebarmenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font: normal 11px Arial;
+width: 190px; /* Main Menu Item widths */
+border-bottom: 0px solid #463730;
+}
+ 
+.sidebarmenu ul li{
+position: relative;
+}
+
+/* Top level menu links style */
+.sidebarmenu ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+color: #000000;
+text-decoration: none;
+padding: 6.5px;
+border-bottom: 1px solid #e1e1e1;
+border-right: 0px solid #463730;
+
+}
+
+.sidebarmenu ul li a:link, .sidebarmenu ul li a:visited, .sidebarmenu ul li a:active{
+background-color: #f0f0f0; /*background of tabs (default state)*/
+}
+
+.sidebarmenu ul li a:visited{
+color: #000;
+}
+
+.sidebarmenu ul li a:hover{
+background:#d4d4d4 url("images/vert-one_arrow.gif") no-repeat 0 15px;
+color: #fff;
+}
+
+/*Sub level menu items */
+.sidebarmenu ul li ul{
+position: absolute;
+width: 170px; /*Sub Menu Items width */
+top: 0;
+visibility: hidden;
+}
+
+.sidebarmenu a.subfolderstyle{
+background: url(right.gif) no-repeat 97% 50%;
+}
+
+ 
+/* Holly Hack for IE \*/
+* html .sidebarmenu ul li { float: left; height: 1%; }
+* html .sidebarmenu ul li a { height: 1%; }
+/* End */
+
+
+
+.bgGreyRed {
+	background-color: #d2d2d2;
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: #6c6559;
+}
+
+.satir2
+{
+	FONT-SIZE: 12px;
+	COLOR: #4f4f4f;
+	FONT-FAMILY: Arial;
+	LINE-HEIGHT: 18px;
+	LETTER-SPACING: 0px
+}
